@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import array2ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-from-array@esm/index.mjs';
+import array2ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-from-array@v0.1.0-esm/index.mjs';
 ```
 
 #### array2ndarray( buf, order )
@@ -103,7 +103,7 @@ The function supports the following parameters:
 
 import dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtype@esm/index.mjs';
 import typedarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-typed@esm/index.mjs';
-import array2ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-from-array@esm/index.mjs';
+import array2ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-from-array@v0.1.0-esm/index.mjs';
 
 var buf = typedarray( 10, 'float64' );
 var x = array2ndarray( buf, 'row-major' );
