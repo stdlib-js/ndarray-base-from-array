@@ -78,13 +78,16 @@ var array2ndarray = require( '@stdlib/ndarray-base-from-array' );
 Returns a one-dimensional [ndarray][@stdlib/ndarray/base/ctor] which wraps a provided input array.
 
 ```javascript
+var getShape = require( '@stdlib/ndarray-shape' );
+var getDType = require( '@stdlib/ndarray-dtype' );
+
 var x = array2ndarray( [ 1, 2, 3 ], 'row-major' );
 // returns <ndarray>
 
-var sh = x.shape;
+var sh = getShape( x );
 // returns [ 3 ]
 
-var dt = x.dtype;
+var dt = String( getDType( x ) );
 // returns 'generic'
 ```
 
@@ -114,29 +117,29 @@ The function supports the following parameters:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var dtype = require( '@stdlib/ndarray-dtype' );
+var getDType = require( '@stdlib/ndarray-dtype' );
 var typedarray = require( '@stdlib/array-typed' );
 var array2ndarray = require( '@stdlib/ndarray-base-from-array' );
 
 var buf = typedarray( 10, 'float64' );
 var x = array2ndarray( buf, 'row-major' );
-console.log( dtype( x ) );
-// => 'float64'
+var dt = String( getDType( x ) );
+// returns 'float64'
 
 buf = typedarray( 10, 'int32' );
 x = array2ndarray( buf, 'row-major' );
-console.log( dtype( x ) );
-// => 'int32'
+dt = String( getDType( x ) );
+// returns 'int32'
 
 buf = typedarray( 10, 'complex128' );
 x = array2ndarray( buf, 'row-major' );
-console.log( dtype( x ) );
-// => 'complex128'
+dt = String( getDType( x ) );
+// returns 'complex128'
 
 buf = typedarray( 10, 'bool' );
 x = array2ndarray( buf, 'row-major' );
-console.log( dtype( x ) );
-// => 'bool'
+dt = String( getDType( x ) );
+// returns 'bool'
 ```
 
 </section>
@@ -198,8 +201,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/ndarray-base-from-array.svg
 [npm-url]: https://npmjs.org/package/@stdlib/ndarray-base-from-array
 
-[test-image]: https://github.com/stdlib-js/ndarray-base-from-array/actions/workflows/test.yml/badge.svg?branch=v0.1.0
-[test-url]: https://github.com/stdlib-js/ndarray-base-from-array/actions/workflows/test.yml?query=branch:v0.1.0
+[test-image]: https://github.com/stdlib-js/ndarray-base-from-array/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/ndarray-base-from-array/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/ndarray-base-from-array/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/ndarray-base-from-array?branch=main

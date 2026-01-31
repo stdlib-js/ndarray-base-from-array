@@ -2,6 +2,40 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2026-01-31)
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`4794f9e`](https://github.com/stdlib-js/stdlib/commit/4794f9e933b2f3375daa7d74d856dd8af79ce5ea) - **test:** use functional accessors and ensure support for non-string dtypes _(by Athan Reines)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Athan Reines
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.1.0">
 
 ## 0.1.0 (2026-01-31)
