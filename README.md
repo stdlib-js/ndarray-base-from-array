@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import array2ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-from-array@deno/mod.js';
+import array2ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-from-array@v0.1.0-deno/mod.js';
 ```
 
 #### array2ndarray( buf, order )
@@ -98,7 +98,7 @@ The function supports the following parameters:
 ```javascript
 import dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtype@deno/mod.js';
 import typedarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-typed@deno/mod.js';
-import array2ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-from-array@deno/mod.js';
+import array2ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-from-array@v0.1.0-deno/mod.js';
 
 var buf = typedarray( 10, 'float64' );
 var x = array2ndarray( buf, 'row-major' );
