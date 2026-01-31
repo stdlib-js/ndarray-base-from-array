@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import array2ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-from-array@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/ndarray-base-from-array/tags). For example,
+
+```javascript
 import array2ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-from-array@v0.1.0-deno/mod.js';
 ```
 
@@ -98,7 +103,7 @@ The function supports the following parameters:
 ```javascript
 import dtype from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtype@deno/mod.js';
 import typedarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-typed@deno/mod.js';
-import array2ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-from-array@v0.1.0-deno/mod.js';
+import array2ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-from-array@deno/mod.js';
 
 var buf = typedarray( 10, 'float64' );
 var x = array2ndarray( buf, 'row-major' );
