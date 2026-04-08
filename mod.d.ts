@@ -18,7 +18,7 @@
 
 // TypeScript Version: 4.1
 
-/// <reference types="@stdlib/types"/>
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
 import { Collection, AccessorArrayLike, Complex128Array, Complex64Array, BooleanArray } from '@stdlib/types/array';
 import { float64ndarray, float32ndarray, int32ndarray, int16ndarray, int8ndarray, uint32ndarray, uint16ndarray, uint8ndarray, uint8cndarray, complex128ndarray, complex64ndarray, boolndarray, genericndarray, Order } from '@stdlib/types/ndarray';
